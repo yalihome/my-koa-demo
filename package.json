@@ -1,0 +1,38 @@
+{
+  "name": "koa",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "koa": "^2.5.0",
+    "koa-body": "^1.7.0",
+    "koa-compose": "^4.1.0",
+    "koa-connect": "^2.0.1",
+    "koa-ejs": "^4.1.1",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "koa-views": "^6.1.4",
+    "mocha": "^5.2.0"
+  },
+  "devDependencies": {
+    "mochawesome": "^3.0.2"
+  },
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yalihome/my-koa-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yalihome/my-koa-demo/issues"
+  },
+  "homepage": "https://github.com/yalihome/my-koa-demo#readme",
+  "description": ""
+}
