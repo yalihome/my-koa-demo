@@ -1,0 +1,14 @@
+extends layout
+
+h1 Posts
+    p You have 
+        strong{{ posts.length }} posts!
+    p 
+        a(href="/post/new") Create a Post
+    ul#posts
+    each post in posts
+        li
+            h2{ post.title }
+            p
+                a(href="/post/{post.id}")Read post
+</ul>

@@ -3,6 +3,8 @@ let render = require("./lib/render");
 let logger = require("koa-logger");
 let router = require("koa-router")();
 let koaBody = require("koa-body");
+// let ejs = require("koa-ejs");
+let path = require("path");
 
 let app = module.exports = new Koa();
 
