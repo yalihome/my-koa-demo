@@ -1,8 +1,9 @@
 let Koa = require("koa");
-let render = require("./lib/render");
+// let render = require("./lib/render");
 let logger = require("koa-logger");
 let router = require("koa-router")();
 let koaBody = require("koa-body");
+let views = require("koa-views");
 // let ejs = require("koa-ejs");
 let path = require("path");
 
@@ -10,7 +11,12 @@ let app = module.exports = new Koa();
 
 let posts = [];
 app.use(logger());
-app.use(render);
+app.use(views(path.join(__dirname+"/views"),{
+    extension:"jade",
+    map:{
+        html:"jade"
+    }
+}));
 app.use(koaBody());
 
 router.get("/",list)
